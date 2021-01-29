@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+main {
+  background-image: url('img/img1.jpg');
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.links-container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  
+.link-url {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 52px;
+  letter-spacing: 3px;
+  opacity: 0.5;
+}
+
+/* Links Positioning */
+
+#link_1 {
+  position: relative;
+  left: 51vw;
+  top: 3vh;
+}
+
+#link_2 {
+  position: relative;
+  left: 29vw;
+  top: 1vh;
+}
+
+#link_3 {
+  position: relative;
+  left: 16vw;
+  top: -1vh;
+}
+
+#link_4 {
+  position: relative;
+  left: 19vw;
+  top: -2vh;
+}
+
+#link_5 {
+  position: relative;
+  left: 14vw;
+  top: -4vh;
+}
+
+#link_6 {
+  position: relative;
+  left: 62vw;
+  top: 3vh;
+}
+
+#link_7 {
+  position: relative;
+  left: 54vw;
+  top: 1vh;
+}
+
+#link_8 {
+  position: relative;
+  left: 31vw;
+  top: -1vh;
+}
+
+#link_9 {
+  position: relative;
+  left: 20vw;
+  top: -1vh;
+}
+
+#link_10 {
+  position: relative;
+  left: 34vw;
+  top: -2vh;
+}
+
+#link_11 {
+  position: relative;
+  left: 15vw;
+  top: -2vh;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+   .link-url {
+     font-size: 42px;
+   }
+   .links-container {
+      padding-left: 0;
+      margin-left: -2rem;
+   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .link-url {
+    font-size: 36px;
+  }
+  .links-container {
+    padding-left: 0;
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .link-url {
+    font-size: 32px;
+  }
+  .links-container {
+    padding-left: 0;
+    margin-left: -2rem;
+  }
+}
