@@ -6,40 +6,67 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8M8QL68BYD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-8M8QL68BYD');
   </script>
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta property="og:image" content="img1.jpg" />
   <title>Смерти.net</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img1.jpg">
 </head>
 
 <body>
 
-<main class="main">
-  <article class="links-container">
-    <ul class="links-list">
-      <li class="link" id="link_1"><a class="link-url" href="https://snob.ru/entry/195932/">начало</a></li>
-      <li class="link" id="link_2"><a class="link-url" href="https://www.youtube.com/watch?v=8wf26TdzhuA">интервью</a></li>
-      <li class="link" id="link_3"><a class="link-url" href="http://www.natsbest.ru/award/2021/book/smertinet/">нацбест</a></li>
-      <li class="link" id="link_4"><a class="link-url" href="https://www.papermag.com/genesis-p-orridge-transformation-2633161174.html">бабушка</a></li>
-      <li class="link" id="link_5"><a class="link-url" href="https://book24.ru/product/smerti-net-5961627/">предзаказ?</a></li>
-      <li class="link" id="link_6"><a class="link-url" href="http://dugward.ru/library/fedorov/fedorov_muzey.html">музей</a></li>      
-      <li class="link" id="link_7"><a class="link-url" href="https://esquire.ru/letters/257983-internet-dlya-mertvyh-i-cifrovoe-bessmertie-fragment-romana-pisatelnicy-tatyany-zamirovskoy-smertinet">эcквайр</a></li>
-      <li class="link" id="link_8"><a class="link-url" href="http://openhumanitiespress.org/books/download/Morton_2013_Realist-Magic.pdf">объекты</a></li>
-      <li class="link" id="link_9"><a class="link-url" href="https://www.e-flux.com/architecture/superhumanity/91055/art-without-death/">бессмертие</a></li>
-      <li class="link" id="link_10"><a class="link-url" href="https://www.colta.ru/articles/specials/17352-pamyat-molchi">память</a></li>
-      <!-- <li class="link" id="link_11"><a class="link-url" href="https://esquire.ru/letters/257983-internet-dlya-mertvyh-i-cifrovoe-bessmertie-fragment-romana-pisatelnicy-tatyany-zamirovskoy-smertinet/">эсквайр</a></li> -->
-    </ul>
-  </article>
-</main>
+      <script>
+        function getBgCover() {
+          var background = document.getElementById("main");
+          background.classList.add("background-cover");
+          
+          function removeBgCover() {
+            background.classList.remove("background-cover");
+          }
+          
+          setTimeout(removeBgCover, 2000);
+        }
+      </script>
+
+  <main id="main" class="main">
+    <article class="corner-container">
+      <img onclick="getBgCover()" class="corner-image" src="corner.gif" alt="" srcset="">
+    </article>
+    <article class="links-container">
+      <ul class="links-list">
+        <li class="link" id="link_1"><a class="link-url" href="https://snob.ru/entry/195932/">начало</a></li>
+        <li class="link" id="link_2"><a class="link-url" href="https://www.youtube.com/watch?v=8wf26TdzhuA">интервью</a>
+        </li>
+        <li class="link" id="link_3"><a class="link-url"
+            href="http://www.natsbest.ru/award/2021/book/smertinet/">нацбест</a></li>
+        <li class="link" id="link_4"><a class="link-url"
+            href="https://www.papermag.com/genesis-p-orridge-transformation-2633161174.html">бабушка</a></li>
+        <li class="link" id="link_5"><a class="link-url"
+            href="https://book24.ru/product/smerti-net-5961627/">предзаказ?</a></li>
+        <li class="link" id="link_6"><a class="link-url"
+            href="http://dugward.ru/library/fedorov/fedorov_muzey.html">музей</a></li>
+        <li class="link" id="link_7"><a class="link-url"
+            href="https://esquire.ru/letters/257983-internet-dlya-mertvyh-i-cifrovoe-bessmertie-fragment-romana-pisatelnicy-tatyany-zamirovskoy-smertinet">эcквайр</a>
+        </li>
+        <li class="link" id="link_8"><a class="link-url"
+            href="http://openhumanitiespress.org/books/download/Morton_2013_Realist-Magic.pdf">объекты</a></li>
+        <li class="link" id="link_9"><a class="link-url"
+            href="https://www.e-flux.com/architecture/superhumanity/91055/art-without-death/">бессмертие</a></li>
+        <li class="link" id="link_10"><a class="link-url"
+            href="https://www.colta.ru/articles/specials/17352-pamyat-molchi">память</a></li>
+        <!-- <li class="link" id="link_11"><a class="link-url" href="https://esquire.ru/letters/257983-internet-dlya-mertvyh-i-cifrovoe-bessmertie-fragment-romana-pisatelnicy-tatyany-zamirovskoy-smertinet/">эсквайр</a></li> -->
+      </ul>
+    </article>
+  </main>
 
 </body>
 
