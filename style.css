@@ -3,6 +3,27 @@ body {
   font-family: 'Viaoda Libre', cursive;
 }
 
+.background-cover {
+  background-color: #03151e;
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  animation-name: add-cover;
+  animation-duration: .5s;
+}
+
+@keyframes add-cover {
+  from {
+    background-image: url('img1.jpg');
+    background-repeat: repeat;
+  }
+  to {
+    background-image: url('cover.jpg');
+    background-repeat: no-repeat;
+  }
+}
+
 main {
   background-image: url('img1.jpg');
   background-repeat: repeat;
@@ -17,13 +38,32 @@ main {
   align-items: center;
 }
 
+@keyframes remove-cover {
+  from {
+    background-image: url('cover.jpg');
+    background-repeat: no-repeat;
+  }
+  to {
+    background-image: url('img1.jpg');
+    background-repeat: repeat;
+  }
+}
+
 a:hover {
   opacity: 1;
 }
 
+.corner-image {
+  width: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
 .links-container {
   height: 100vh;
-  
+
   margin-top: 1rem;
   margin-bottom: 1rem;
 
@@ -150,5 +190,8 @@ a:hover {
   .links-container {
     padding-left: 0;
     margin-left: -2rem;
+  }
+  .corner-image {
+    width: 150px;
   }
 }
